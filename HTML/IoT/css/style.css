@@ -1,0 +1,39 @@
+body{
+
+    background-color: rgb(24, 0, 72);
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+
+}
+
+select{
+
+    border-radius: 10px;
+
+}
+
+.inputTexto{
+
+border-radius: 10px;
+
+}
+.inputTexto:focus{
+
+    border-radius: 10px;
+    color: aqua;
+    
+}
+
+.btn{
+
+    background-color: rgb(45, 255, 55);
+    font-family: fantasy;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 15px;
+
+}
+.Imagens{
+
+    height: 400px;
+
+}

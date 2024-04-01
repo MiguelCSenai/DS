@@ -1,0 +1,54 @@
+body{
+
+    background-color: rgb(218, 218, 218);
+
+}
+
+.joystick{
+
+    width: 100px;
+    height: 100px;
+
+}
+
+#icn{
+
+    height: 100px;
+
+}
+
+.right{
+
+    rotate: 90deg;
+
+}
+
+.left{
+
+    rotate: -90deg;
+
+}
+
+.baixo{
+
+    rotate: 180deg;
+
+}
+
+table{
+
+    margin-top: 13pc;
+    margin-left: 2pc;
+
+}
+
+.atk{
+
+    height: 50px;
+    margin-left: 1100px;
+    margin-top: 50px;
+    margin-bottom: -100px;
+    background-color: rgba(49, 49, 49, 0.242);
+    border-radius: 50px;
+
+}
