@@ -8,12 +8,13 @@ public class Exercicio7 {
               
         int iMaior = 0;
         int iMenor = 0;
+        String sIdades = "Idades digitadas:\n";
         
         for(int i=1; i<=6; i++){
             
             int iIdade = Integer.parseInt(JOptionPane.showInputDialog("Digite a "+i+"a idade"));
             
-            System.out.println(i+"a idade: "+iIdade);
+            sIdades += String.valueOf(iIdade)+"\n";
             
             if(iIdade > iMaior || i == 1){
                 
@@ -23,12 +24,12 @@ public class Exercicio7 {
             if(iIdade < iMenor || i == 1){
                 
                 iMenor = iIdade;
-                
+            
             }
             
         }
         
-        System.out.println("Maior idade: "+iMaior+"\nMenor idade: "+iMenor);
+        JOptionPane.showMessageDialog(null, sIdades+"\nMaior idade: "+iMaior+"\n\nMenor idade: "+iMenor);
         
     }
     
