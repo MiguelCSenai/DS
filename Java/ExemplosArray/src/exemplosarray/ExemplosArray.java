@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package metodos.matematicos.e.string;
+package exemplosarray;
 
 /**
  *
  * @author Aluno
  */
-public class MetodosMatematicosEString {
+public class ExemplosArray {
 
     /**
      * @param args the command line arguments
