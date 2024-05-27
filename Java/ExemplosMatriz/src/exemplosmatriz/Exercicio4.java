@@ -11,7 +11,7 @@ public class Exercicio4 {
             System.out.println("\n");
             for (int iCol = 0; iCol < 8; iCol++) {
                 
-                aiHor[iRow][iCol] = (int)(Math.random()*50)+1;
+                aiHor[iRow][iCol] = (int)(Math.random()*50)+51;
                 System.out.print(aiHor[iRow][iCol]+"\t");
                 
             }
