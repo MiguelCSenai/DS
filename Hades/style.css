@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('fundo.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: #d3d3d37e;
+    padding: 20px 10px;
+    position: sticky;
+
+}
+
+.logo{
+
+    height: 80px;
+    padding: 0;
+    margin-top: -32px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    max-height: 20px;
+}
+
+.btn-menu {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+}
+
+.btn-menu:hover {
+    background-color: #ffbf00;
+    border-radius: 5px;
+}
+
+main {
+    flex-grow: 1;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('path/to/your/image.png') no-repeat center center/cover;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 5em;
+    color: white;
+}
+
+.content button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
