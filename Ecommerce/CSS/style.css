@@ -11,13 +11,16 @@ body {
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
+    background: rgb(174,157,190);
+    background: linear-gradient(232deg, rgba(174,157,190,1) 0%, rgba(220,198,226,1) 35%, rgba(170,138,185,1) 100%);
 }
 
 .product-image{
 
-    background: red;
     height: 200px;
     aspect-ratio: 1/1;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 141, 141);
 
 }
 
@@ -47,50 +50,78 @@ header {
 
 
 }
+
 .products-container{
 
     width: 900px;
-    gap: 350px;
+    gap: 330px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: "New Amsterdam", sans-serif;
 
+
+}
+
+.products-container p{
+
+    font-size: 1.5em;
+    margin-top: 0;
 
 }
 
 #img1{
-    
+
+    height: 100%;
+    width: 100%; 
+    background: url('../IMG/tenis1.png');
+    background-size: cover;
 
 }
 
 #img2{
-
-
+    
+    height: 100%;
+    width: 100%; 
+    background: url('../IMG/tenis2.png');
+    background-size: cover;
 
 }
 
 #img3{
 
-
+    height: 100%;
+    width: 100%; 
+    background: url('../IMG/tenis3.png');
+    background-size: cover;
 
 }
 
 #img4{
 
-
+    height: 100%;
+    width: 100%; 
+    background: url('../IMG/tenis4.png');
+    background-size: cover;
 
 }
 
 #img5{
 
-
+    height: 100%;
+    width: 100%; 
+    background: url('../IMG/tenis5.png');
+    background-size: cover;
 
 }
 
 #img6{
 
-
+    height: 100%;
+    width: 100%; 
+    background: url('../IMG/tenis6.png');
+    background-size: cover;
 
 }
 
@@ -120,22 +151,22 @@ footer {
 
 }
 
-.bold
-
 .card:not(:hover){
 
-    background: rgb(182, 129, 235);
-    border: 2px solid rgb(93, 0, 255);
+    background: rgba(215, 175, 255, 0.356);
+    border: 4px solid rgb(52, 52, 52);
     animation-name: fadeout;
+    scale: 1;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
-
+    
 }
 
 .card:hover{
-
-    background: rgba(182, 129, 235, 0.356);
-    border: 2px solid rgb(52, 52, 52);
+    
+    background: rgb(215, 175, 255);
+    border: 4px solid rgb(93, 0, 255);
+    scale: 1.1;
     animation-name: fadein;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -146,14 +177,16 @@ footer {
 
     from{
 
-        background: rgb(182, 129, 235);
-        border: 2px solid rgb(93, 0, 255);
-
+        background: rgba(215, 175, 255, 0.356);
+        border: 4px solid rgb(52, 52, 52);
+        scale: 1;
+        
     }
     to{
-
-        background: rgba(182, 129, 235, 0.356);
-        border: 2px solid rgb(52, 52, 52);
+        
+        background: rgb(215, 175, 255);
+        border: 4px solid rgb(93, 0, 255);
+        scale: 1.1;
 
     }
     
@@ -163,14 +196,16 @@ footer {
 
     from{
 
-        background: rgba(182, 129, 235, 0.356);
-        border: 2px solid rgb(52, 52, 52);
-
+        background: rgb(215, 175, 255);
+        border: 4px solid rgb(93, 0, 255);
+        scale: 1.1;
+        
     }
     to{
-
-        background: rgb(182, 129, 235);
-        border: 2px solid rgb(93, 0, 255);
+        
+        background: rgba(215, 175, 255, 0.356);
+        border: 4px solid rgb(52, 52, 52);
+        scale: 1;
 
     }
     
