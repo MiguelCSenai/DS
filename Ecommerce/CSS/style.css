@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.product-image{
+
+    background: red;
+    height: 200px;
+    aspect-ratio: 1/1;
+
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background: rgb(131,66,196);
+    background: linear-gradient(146deg, rgba(131,66,196,1) 0%, rgba(100,9,125,1) 35%, rgba(131,31,180,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.container {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 200px;
+
+
+}
+.products-container{
+
+    width: 900px;
+    gap: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+#img1{
+    
+
+}
+
+#img2{
+
+
+
+}
+
+#img3{
+
+
+
+}
+
+#img4{
+
+
+
+}
+
+#img5{
+
+
+
+}
+
+#img6{
+
+
+
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background: rgb(131,66,196);
+    background: linear-gradient(146deg, rgba(131,66,196,1) 0%, rgba(100,9,125,1) 35%, rgba(131,31,180,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.card{
+
+    height: 380px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bold
+
+.card:not(:hover){
+
+    background: rgb(182, 129, 235);
+    border: 2px solid rgb(93, 0, 255);
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+.card:hover{
+
+    background: rgba(182, 129, 235, 0.356);
+    border: 2px solid rgb(52, 52, 52);
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+@keyframes fadein {
+
+    from{
+
+        background: rgb(182, 129, 235);
+        border: 2px solid rgb(93, 0, 255);
+
+    }
+    to{
+
+        background: rgba(182, 129, 235, 0.356);
+        border: 2px solid rgb(52, 52, 52);
+
+    }
+    
+}
+
+@keyframes fadeout {
+
+    from{
+
+        background: rgba(182, 129, 235, 0.356);
+        border: 2px solid rgb(52, 52, 52);
+
+    }
+    to{
+
+        background: rgb(182, 129, 235);
+        border: 2px solid rgb(93, 0, 255);
+
+    }
+    
+}
