@@ -21,6 +21,7 @@ body {
     aspect-ratio: 1/1;
     border-radius: 10px;
     border: 1px solid rgb(141, 141, 141);
+    margin-bottom: 0;
 
 }
 
@@ -68,6 +69,7 @@ header {
 
     font-size: 1.5em;
     margin-top: 0;
+    text-decoration: underline; 
 
 }
 
@@ -122,6 +124,77 @@ header {
     width: 100%; 
     background: url('../IMG/tenis6.png');
     background-size: cover;
+
+}
+
+.btn{
+
+    background: rgba(255, 255, 255, 0.21);
+    padding: 10px;
+    border: 3px solid rgb(115, 0, 255);
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+
+}
+
+.btn:not(:hover){
+
+    animation: btnoff 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+.btn:hover{
+
+    background: rgb(195, 0, 255);
+    border: 3px solid white;
+    animation: btnon 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+@keyframes btnon {
+
+    from{
+
+        background: rgba(255, 255, 255, 0.21);
+        border: 3px solid rgb(115, 0, 255);
+
+    }
+
+    to{
+
+        background: rgb(195, 0, 255);
+        border: 3px solid white;
+
+    }
+    
+}
+
+@keyframes btnoff {
+
+    from{
+
+        background: rgb(195, 0, 255);
+        border: 3px solid white;
+        
+    }
+    
+    to{
+        
+        background: rgba(255, 255, 255, 0.21);
+        border: 3px solid rgb(115, 0, 255);
+
+    }
+    
+}
+
+.nome{
+
+    text-decoration: none;
 
 }
 
