@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(157, 190, 186);
+    background: linear-gradient(232deg, rgb(157, 190, 189) 0%, rgb(198, 226, 224) 35%, rgb(138, 185, 184) 100%);
+}
+
+.product-image{
+
+    height: 280px;
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 141, 141);
+    margin-bottom: 0;
+
+
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background: rgb(66, 196, 183);
+    background: linear-gradient(146deg, rgb(66, 196, 196) 0%, rgb(9, 125, 125) 35%, rgb(31, 180, 173) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.container {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 200px;
+
+
+}
+
+.products-container{
+
+    width: 1000px;
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "New Amsterdam", sans-serif;
+
+
+}
+
+.products-container p{
+
+    font-size: 1.5em;
+    margin-top: 0;
+    text-decoration: underline; 
+
+}
+
+#img1{
+
+    background: url('https://www.tecnoveste.com.br/wp-content/uploads/2021/05/1_x8Fp9uOPgEaQdig7hV70qw.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img2{
+
+    background: url('https://assets-blog.hostgator.com.br/wp-content/uploads/2016/09/logica-de-programacao-blog.webp');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img3{
+
+    background: url('https://linkcarreira.com.br/wp-content/uploads/2020/09/foco.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img4{
+
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTO8H6mRVR83mbxemvDIPW8rbiLZ1b8XVl6Q&s');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img5{
+
+    background: url('https://www.green4t.com/wp-content/uploads/2023/07/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img6{
+
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ3VQFUgZv8h79roJtEkQjdY-ci9eEPbz_w&s');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.btn{
+
+    background: rgba(255, 255, 255, 0.21);
+    padding: 10px;
+    border: 3px solid rgb(0, 255, 238);
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+
+}
+
+.btn:not(:hover){
+
+    animation: btnoff 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+.btn:hover{
+
+    background: rgb(0, 255, 221);
+    border: 3px solid white;
+    animation: btnon 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+@keyframes btnon {
+
+    from{
+
+        background: rgba(255, 255, 255, 0.21);
+        border: 3px solid rgb(0, 255, 247);
+
+    }
+
+    to{
+
+        background: rgb(0, 255, 242);
+        border: 3px solid white;
+
+    }
+    
+}
+
+@keyframes btnoff {
+
+    from{
+
+        background: rgb(0, 255, 251);
+        border: 3px solid white;
+        
+    }
+    
+    to{
+        
+        background: rgba(255, 255, 255, 0.21);
+        border: 3px solid rgb(0, 195, 255);
+
+    }
+    
+}
+
+.title{
+
+    text-decoration: none;
+
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background: rgb(66, 190, 196);
+    background: linear-gradient(146deg, rgb(66, 196, 187) 0%, rgb(9, 121, 125) 35%, rgb(31, 180, 150) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.card{
+
+    height: 380px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card:not(:hover){
+
+    background: rgba(175, 255, 254, 0.356);
+    border: 4px solid rgb(52, 52, 52);
+    animation-name: fadeout;
+    scale: 1;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    
+}
+
+.card:hover{
+    
+    background: rgb(175, 248, 255);
+    border: 4px solid rgb(0, 255, 255);
+    scale: 1.1;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+@keyframes fadein {
+
+    from{
+
+        background: rgba(215, 175, 255, 0.356);
+        border: 4px solid rgb(52, 52, 52);
+        scale: 1;
+        
+    }
+    to{
+        
+        background: rgb(215, 175, 255);
+        border: 4px solid rgb(93, 0, 255);
+        scale: 1.1;
+
+    }
+    
+}
+
+@keyframes fadeout {
+
+    from{
+
+        background: rgb(215, 175, 255);
+        border: 4px solid rgb(93, 0, 255);
+        scale: 1.1;
+        
+    }
+    to{
+        
+        background: rgba(215, 175, 255, 0.356);
+        border: 4px solid rgb(52, 52, 52);
+        scale: 1;
+
+    }
+    
+}
