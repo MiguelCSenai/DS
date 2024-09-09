@@ -11,8 +11,8 @@ body {
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: rgb(174,157,190);
-    background: linear-gradient(232deg, rgba(174,157,190,1) 0%, rgba(220,198,226,1) 35%, rgba(170,138,185,1) 100%);
+    background: rgb(162, 190, 157);
+    background: linear-gradient(232deg, rgb(157, 190, 160) 0%, rgb(202, 226, 198) 35%, rgb(138, 185, 143) 100%);
 }
 
 .product-image{
@@ -28,8 +28,8 @@ body {
 header {
     height: 80px;
     width: 100%;
-    background: rgb(131,66,196);
-    background: linear-gradient(146deg, rgba(131,66,196,1) 0%, rgba(100,9,125,1) 35%, rgba(131,31,180,1) 100%);
+    background: rgb(70, 196, 66);
+    background: linear-gradient(146deg, rgb(66, 196, 68) 0%, rgb(9, 125, 11) 35%, rgb(31, 180, 33) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,28 +85,29 @@ header {
 
 #img1{
 
-    background: url('../IMG/tenis1.png');
+    background: url('https://yt3.googleusercontent.com/7NSzHZlaIM0q8yteFQJuI3SEOr4Ntb28uXlGdfj2HAdiWqBCHUBbQpizheJch2hCr9RcveSD6w=s900-c-k-c0x00ffffff-no-rj');
     background-size: cover;
 
 }
 
 #img2{
     
-    background: url('../IMG/tenis2.png');
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png');
     background-size: cover;
 
 }
 
 #img3{
 
-    background: url('../IMG/tenis3.png');
+    background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2420110/capsule_616x353.jpg?t=1725653368');
     background-size: cover;
+    background-position: center;
 
 }
 
 #img4{
 
-    background: url('../IMG/tenis4.png');
+    background: url('https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png');
     background-size: cover;
 
 }
@@ -129,7 +130,7 @@ header {
 
     background: rgba(255, 255, 255, 0.21);
     padding: 10px;
-    border: 3px solid rgb(115, 0, 255);
+    border: 3px solid rgb(0, 255, 0);
     width: 80%;
     text-align: center;
     border-radius: 8px;
@@ -199,8 +200,8 @@ header {
 footer {
     height: 60px;
     width: 100%;
-    background: rgb(131,66,196);
-    background: linear-gradient(146deg, rgba(131,66,196,1) 0%, rgba(100,9,125,1) 35%, rgba(131,31,180,1) 100%);
+    background: rgb(66, 196, 66);
+    background: linear-gradient(146deg, rgb(83, 196, 66) 0%, rgb(13, 125, 9) 35%, rgb(31, 180, 36) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +225,7 @@ footer {
 
 .card:not(:hover){
 
-    background: rgba(215, 175, 255, 0.356);
+    background: rgba(178, 255, 175, 0.356);
     border: 4px solid rgb(52, 52, 52);
     animation-name: fadeout;
     scale: 1;
@@ -235,8 +236,8 @@ footer {
 
 .card:hover{
     
-    background: rgb(215, 175, 255);
-    border: 4px solid rgb(93, 0, 255);
+    background: rgb(175, 255, 183);
+    border: 4px solid rgb(0, 255, 0);
     scale: 1.1;
     animation-name: fadein;
     animation-duration: 1s;
@@ -248,15 +249,15 @@ footer {
 
     from{
 
-        background: rgba(215, 175, 255, 0.356);
+        background: rgba(182, 255, 175, 0.356);
         border: 4px solid rgb(52, 52, 52);
         scale: 1;
         
     }
     to{
         
-        background: rgb(215, 175, 255);
-        border: 4px solid rgb(93, 0, 255);
+        background: rgb(175, 255, 178);
+        border: 4px solid rgb(0, 255, 4);
         scale: 1.1;
 
     }
@@ -267,14 +268,14 @@ footer {
 
     from{
 
-        background: rgb(215, 175, 255);
-        border: 4px solid rgb(93, 0, 255);
+        background: rgb(175, 255, 180);
+        border: 4px solid rgb(0, 255, 0);
         scale: 1.1;
         
     }
     to{
         
-        background: rgba(215, 175, 255, 0.356);
+        background: rgba(176, 255, 175, 0.356);
         border: 4px solid rgb(52, 52, 52);
         scale: 1;
 
