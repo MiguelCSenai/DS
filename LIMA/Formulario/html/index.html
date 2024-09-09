@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=SUSE:wght@100..800&display=swap');
+
+.font-text{
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-titulo{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(141deg, rgb(214, 214, 214) 0%, rgba(154, 154, 154, 0.688) 37%, rgba(194, 194, 194, 0.545) 100%);
+    color: white;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    width: 450px;
+    padding: 40px 35px;
+    background: rgba(31, 31, 31, 0.271);
+    border-radius: 20px 12px;
+    border: 3px solid black;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    margin-right: 20px;
+}
+
+.input-group select {
+    flex: 1;
+}
+
+.input-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input,
+select {
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 9px 15px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+select{
+
+    height: 45px;
+
+}
+
+button {
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: rgba(217, 217, 217, 0.623);
+    color: rgb(0, 0, 0);
+}
+
+</style>
+<body>
+
+    <h1 class="font-titulo">Formulário</h1>
+    <form action="" method="post" class="font-text">
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" required>
+
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep" required>
+
+        <label for="data_nasc">Data de Nascimento:</label>
+        <input type="date" name="data_nasc" id="data_nasc" required>
+
+            <label for="profissao">Profissão</label>
+            <select name="profissao" id="profissao" required>
+                <option value="-">Desempregado</option>
+                <option value="MC">Atendente do MCDonald's</option>
+                <option value="lula">Caixa do Siri Cascudo</option>
+                <option value="bob">Chapeiro do Siri Cascudo</option>
+                <option value="vagabundo">Streamer</option>
+                <option value="chefe">CEO</option>
+            </select>
+
+        <div class="input-group">
+            <input type="checkbox" name="aceita_termos" id="aceita_termos" required>
+            <label for="aceita_termos">Eu li e aceito os termos</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
