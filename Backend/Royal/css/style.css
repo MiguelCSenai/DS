@@ -6,54 +6,69 @@
     font-style: normal;
   }
 
+form{
+
+    background: rgb(227, 227, 227);
+    border: 2px solid black;
+    border-radius: 13px;
+    display: flex;
+    width: 296px;
+    flex-direction: column;
+    padding: 30px 40px 0px 40px;
+
+}
+
+h1{
+
+    color: goldenrod;
+
+}
+
+label{
+
+    margin-left: 5px;
+    margin-bottom: 3px;
+
+}
+
+input{
+
+    margin-bottom: 50px;
+    height: 2.5em;
+    padding-inline-start: 15px;
+    border-radius: 13px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+input:focus::placeholder{
+
+    opacity: 0;
+
+}
+
+input:focus {
+    border: goldenrod 3px solid;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn{
+
+    height: 3.5em;
+    background: goldenrod;
+    border: gray 3px solid;
+    color: white;
+
+}
+
 body{
 
     margin: 0 auto;
-
-}
-
-header{
-
     display: flex;
-    justify-content: start;
+    flex-direction: column;
     align-items: center;
-    height: 70px;
-    width: 100%;
-    background: goldenrod;
-    user-select: none;
-
-}
-
-header img{
-
-    height: 100%;
-    margin-right: 15px;
-
-}
-
-a, .items-menu{
-
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-}
-
-.items-menu{
-
-    padding-inline: 35px;
-
-}
-
-.items-menu:hover{
-
-    background: rgba(0, 0, 0, 0.182);
-
-}
-
-a{
-
-    text-decoration: none;
-    color: black;
+    justify-content: center;
+    height: 97vh;
 
 }
