@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="gravar.php" method="get">
+    <form class="cadastro" action="gravar.php" method="get">
 
         <h1 class="medio">Cadastro de Armas</h1>
 
@@ -31,6 +31,13 @@
         <input type="checkbox" name="gun_alt" id="gun_alt">
 
         <input class="btn medio" type="submit" value="Cadastrar">
+
+    </form>
+
+    <form action="pesquisa.php" class="search-container">
+
+        <input class="search" type="text" name="gun_search" id="gun_search">
+        <label for="gun_search"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></label>
 
     </form>
 

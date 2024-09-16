@@ -6,7 +6,7 @@
     font-style: normal;
   }
 
-form{
+.cadastro{
 
     background: rgb(227, 227, 227);
     border: 2px solid black;
@@ -17,6 +17,8 @@ form{
     padding: 30px 40px 0px 40px;
 
 }
+
+
 
 h1{
 
@@ -34,7 +36,7 @@ label{
 input{
 
     margin-bottom: 50px;
-    height: 2.5em;
+    height: 40px;
     padding-inline-start: 15px;
     border-radius: 13px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -66,9 +68,23 @@ body{
 
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-block: 40px;
+
+}
+
+.search{
+
+    width: 100%;
+    height: 50px;
+
+}
+
+.search-container{
+
+    display: flex;
+    width: 40%;
 
 }
