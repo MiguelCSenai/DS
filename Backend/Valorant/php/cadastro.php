@@ -37,7 +37,7 @@
     <form action="pesquisa.php" class="search-container">
 
         <input class="search" type="text" name="gun_search" id="gun_search">
-        <label for="gun_search"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></label>
+        <label for="gun_search"><button class="subsrc" type="submit"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></button></label>
 
     </form>
 
