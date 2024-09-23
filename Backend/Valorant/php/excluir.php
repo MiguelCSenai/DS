@@ -16,11 +16,12 @@
     <title>Excluido</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body style="height: 97vh;">
 
     <h1>Deletado.</h1>
 
-    
+    <a href="cadastro.php"><button class="negrito">Cadastrar</button></a>
+    <a href="consulta.php"><button class="negrito">Consultar</button></a>
     
 </body>
 </html>
