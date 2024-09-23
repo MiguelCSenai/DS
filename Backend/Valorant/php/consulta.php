@@ -27,7 +27,7 @@
     table{
 
         background: lightgray;
-        width: 70%;
+        width: 75%;
         border-collapse: collapse;
         border-radius: 30px;
         overflow: hidden;
@@ -73,6 +73,18 @@
 
     }
 
+    .del{
+
+        width: 10%;
+
+    }
+
+    .preco{
+
+        width: 8%;
+
+    }
+
 </style>
 
 <body>
@@ -88,7 +100,7 @@
 
     <tr class="tbheader negrito">
 
-            <td class="tdcod">#</td>     <td class="tdleft">Nome da Arma</td>     <td class="tdcenter">Capacidade do Pente</td>     <td class="tdright">Velocidade de recarga</td>     <td class="tdright">Preço</td>     <td class="tdright">Velocidade de Movimento</td>       <td class="tdcenter">Possui modo alternativo?</td>
+            <td class="tdcod">#</td>     <td class="tdcenter">Nome da Arma</td>     <td class="tdcenter">Capacidade do Pente</td>     <td class="tdcenter">Velocidade de recarga</td>     <td class="tdcenter">Preço</td>     <td class="tdcenter">Velocidade de Movimento</td>       <td class="tdcenter">Possui modo alternativo?</td>    <td></td>
 
     </tr>
 
@@ -114,9 +126,10 @@
                     echo ("<td class='tdleft'>".$name."</td>");
                     echo ("<td class='tdcenter'>".$magazine."</td>");
                     echo ("<td class='tdright'>".$reload."s</td>");
-                    echo ("<td class='tdright'>".$cost."</td>");
+                    echo ("<td class='preco tdright'>".$cost."</td>");
                     echo ("<td class='tdright'>".$run."m/s</td>");
                     echo ("<td class='tdcenter'>".$alt."</td>");
+                    echo ("<td class='del tdcenter'><a href='excluir.php?id=".$cod."'>Excluir</a></td>");
                     echo "</tr>";
                 }
             }
