@@ -114,3 +114,9 @@ a button{
     border: solid 3px rgb(162, 162, 162);
 
 }
+
+table tr:nth-child(even){
+
+    background-color: rgb(230, 230, 230);
+
+}

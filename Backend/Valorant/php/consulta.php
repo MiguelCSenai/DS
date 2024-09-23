@@ -73,7 +73,7 @@
 
     }
 
-    .del{
+    .btntd{
 
         width: 10%;
 
@@ -100,7 +100,7 @@
 
     <tr class="tbheader negrito">
 
-            <td class="tdcod">#</td>     <td class="tdcenter">Nome da Arma</td>     <td class="tdcenter">Capacidade do Pente</td>     <td class="tdcenter">Velocidade de recarga</td>     <td class="tdcenter">Preço</td>     <td class="tdcenter">Velocidade de Movimento</td>       <td class="tdcenter">Possui modo alternativo?</td>    <td></td>
+            <td class="tdcod">#</td>     <td class="tdcenter">Nome da Arma</td>     <td class="tdcenter">Capacidade do Pente</td>     <td class="tdcenter">Velocidade de recarga</td>     <td class="tdcenter">Preço</td>     <td class="tdcenter">Velocidade de Movimento</td>       <td class="tdcenter">Possui modo alternativo?</td>        <td></td>       <td></td>
 
     </tr>
 
@@ -129,7 +129,8 @@
                     echo ("<td class='preco tdright'>".$cost."</td>");
                     echo ("<td class='tdright'>".$run."m/s</td>");
                     echo ("<td class='tdcenter'>".$alt."</td>");
-                    echo ("<td class='del tdcenter'><a href='excluir.php?id=".$cod."'>Excluir</a></td>");
+                    echo ("<td class='btntd tdcenter'><a href='excluir.php?id=".$cod."'>Excluir</a></td>");
+                    echo ("<td class='btntd tdcenter'><a href='alterar.php?id=".$cod."'>Alterar</a></td>");
                     echo "</tr>";
                 }
             }
@@ -137,6 +138,8 @@
         ?>
 
     </table>
+
+    <a href="cadastro.php"><button>Cadastrar</button></a>
 
     
 </body>
