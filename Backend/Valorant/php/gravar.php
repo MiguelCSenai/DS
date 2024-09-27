@@ -26,23 +26,19 @@
     mysqli_close($conexao);
 ?>
 
-<style>
-    .btn {
-        height: 40px;
-        width: 80px;
-        background: blue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        margin-left: 15px;
-        border-radius: 12px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravado</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
-</style>
+    <a href="cadastro.php"><button class="negrito">Cadastrar</button></a>
+    <a href="consulta.php"><button class="negrito">Consultar</button></a>
+    
+</body>
+</html>
 
-<a href="./cadastro.php"><div class="btn">Voltar</div></a>
