@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 27-Set-2024 às 14:02
+-- Tempo de geração: 30-Set-2024 às 14:22
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -46,8 +46,8 @@ INSERT INTO `aluno` (`ra_aluno`, `nome_aluno`, `endereco_aluno`, `cidade_aluno`)
 ('130000001', 'José Cunha', 'Rua Maranhão, 222', 'Santa Bárbara'),
 ('130000002', 'Maria Silva', 'Rua 2, 222', 'Rio Claro'),
 ('130000003', 'Luiz Lima', 'Rua Xavier, 232', 'Piracicaba'),
-('10000004', 'Lilian Lopes', 'Rua Campos, 221', 'Piracicaba'),
-('10000005', 'Carlos Cunha', 'Rua Lee, 45', 'Santa Bárbara'),
+('130000004', 'Lilian Lopes', 'Rua Campos, 221', 'Piracicaba'),
+('100000005', 'Carlos Cunha', 'Rua Lee, 45', 'Santa Bárbara'),
 ('140000001', 'Maria Therezinha', 'Rua Souzas, 32', 'Campinas'),
 ('140000002', 'Laurindo José', 'Rua da Ladeira, 23', 'Santa Bárbara'),
 ('140000003', 'Joceli Cunha', 'Rua Maranhão, 222', 'Santa Bárbara'),
@@ -65,17 +65,17 @@ INSERT INTO `aluno` (`ra_aluno`, `nome_aluno`, `endereco_aluno`, `cidade_aluno`)
 
 DROP TABLE IF EXISTS `disciplina`;
 CREATE TABLE IF NOT EXISTS `disciplina` (
-  `id_disc` int NOT NULL AUTO_INCREMENT,
+  `cod_disc` int NOT NULL AUTO_INCREMENT,
   `nome_disc` varchar(80) NOT NULL,
   `cargahoraria_disc` int NOT NULL,
-  PRIMARY KEY (`id_disc`)
+  PRIMARY KEY (`cod_disc`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `disciplina`
 --
 
-INSERT INTO `disciplina` (`id_disc`, `nome_disc`, `cargahoraria_disc`) VALUES
+INSERT INTO `disciplina` (`cod_disc`, `nome_disc`, `cargahoraria_disc`) VALUES
 (1, 'BD', 30),
 (2, 'PDM', 150),
 (3, 'WEB', 150),
@@ -94,22 +94,22 @@ CREATE TABLE IF NOT EXISTS `historico` (
   `cod_disc` int NOT NULL,
   `cod_turma` int NOT NULL,
   `cod_prof` int NOT NULL,
-  `ano` int NOT NULL,
+  `ano_turma` int NOT NULL,
   `frequencia` int NOT NULL,
   `nota` int NOT NULL,
   PRIMARY KEY (`cod_hist`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `historico`
 --
 
-INSERT INTO `historico` (`cod_hist`, `ra_aluno`, `cod_disc`, `cod_turma`, `cod_prof`, `ano`, `frequencia`, `nota`) VALUES
+INSERT INTO `historico` (`cod_hist`, `ra_aluno`, `cod_disc`, `cod_turma`, `cod_prof`, `ano_turma`, `frequencia`, `nota`) VALUES
 (1, '160000001', 2, 1, 2, 2016, 10, 7),
 (2, '160000001', 2, 1, 2, 2016, 10, 9),
 (3, '160000001', 2, 1, 2, 2016, 10, 9),
-(4, '130000001', 2, 1, 2, 2013, 10, 6),
-(5, '130000001', 2, 1, 2, 2013, 10, 9),
+(4, '130000001', 2, 4, 1, 2013, 10, 6),
+(5, '130000001', 2, 5, 1, 2013, 10, 9),
 (6, '130000002', 2, 1, 2, 2013, 10, 4),
 (7, '130000002', 2, 1, 2, 2013, 10, 7),
 (8, '130000003', 2, 1, 2, 2013, 9, 9),
@@ -119,7 +119,16 @@ INSERT INTO `historico` (`cod_hist`, `ra_aluno`, `cod_disc`, `cod_turma`, `cod_p
 (12, '140000001', 3, 6, 2, 2014, 100, 3),
 (13, '140000001', 3, 6, 2, 2014, 100, 8),
 (14, '140000002', 3, 6, 2, 2014, 100, 2),
-(15, '140000002', 3, 6, 2, 2014, 100, 2);
+(15, '140000002', 3, 6, 2, 2014, 100, 2),
+(16, '130000001', 2, 5, 1, 2014, 100, 9),
+(17, '130000004', 2, 5, 1, 2014, 50, 7),
+(18, '150000001', 1, 3, 3, 2015, 100, 8),
+(19, '150000003', 1, 3, 3, 2015, 90, 7),
+(20, '160000002', 2, 8, 1, 2016, 100, 10),
+(21, '130000003', 2, 5, 1, 2013, 80, 8),
+(22, '140000001', 1, 3, 3, 2014, 50, 5),
+(23, '140000002', 1, 3, 3, 2014, 90, 8),
+(24, '130000002', 2, 5, 1, 2014, 70, 4);
 
 -- --------------------------------------------------------
 
