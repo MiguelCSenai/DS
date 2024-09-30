@@ -1,0 +1,21 @@
+body{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 97vh;
+
+}
+
+button{
+
+    width: 15%;
+    height: 80px;
+
+}
+
+img{
+
+    height: 100%;
+
+}
