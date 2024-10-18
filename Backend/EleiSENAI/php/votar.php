@@ -24,7 +24,11 @@
         display2.value = "";
     }
 
-    function voto(){}
+    function voto(){
+
+        let voto = display1 + display2;
+
+    }
 </script>
 
 <body>
@@ -40,28 +44,36 @@
 
     <div class="btncontainer">
 
+        <div class="titulo">
+
+            <img src="https://seeklogo.com/images/B/brasao-da-republica-do-brasil-logo-F668D19105-seeklogo.com.png" alt="">
+            
+            <div class="texto">JUSTIÇA ELEITORA</div>
+
+        </div>
+
         <div class="numcontainer">
-            <button class="btn" onclick="addNumber(0)">0</button>
-            <button class="btn" onclick="addNumber(1)">1</button>
-            <button class="btn" onclick="addNumber(2)">2</button>
-            <button class="btn" onclick="addNumber(3)">3</button>
-            <button class="btn" onclick="addNumber(4)">4</button>
-            <button class="btn" onclick="addNumber(5)">5</button>
-            <button class="btn" onclick="addNumber(6)">6</button>
-            <button class="btn" onclick="addNumber(7)">7</button>
-            <button class="btn" onclick="addNumber(8)">8</button>
-            <button class="btn" onclick="addNumber(9)">9</button>
+            <button class="btn" onclick="addNumber(0)">0 &#x28C0;</button>
+            <button class="btn" onclick="addNumber(1)">1 &#x28C1;</button>
+            <button class="btn" onclick="addNumber(2)">2 &#x28C2;</button>
+            <button class="btn" onclick="addNumber(3)">3 &#x28C3;</button>
+            <button class="btn" onclick="addNumber(4)">4 &#x28C4;</button>
+            <button class="btn" onclick="addNumber(5)">5 &#x28C5;</button>
+            <button class="btn" onclick="addNumber(6)">6 &#x28C6;</button>
+            <button class="btn" onclick="addNumber(7)">7 &#x28C7;</button>
+            <button class="btn" onclick="addNumber(9)">9 &#x28C9;</button>
+            <button class="btn" onclick="addNumber(8)">8 &#x28C8;</button>
         </div>
 
         <div class="fnctcontainer">
         
-            <button class="branco">BRANCO</button>
-            <button class="corrige" onclick="clearDisplay()">CORRIGE</button>
-            <form action="gravarvoto.php">
+            <button class="btnfnct branco">BRANCO</button>
+            <button class="btnfnct corrige" onclick="clearDisplay()">CORRIGE</button>
+            <form class="confirmacontainer" action="gravarvoto.php">
 
-            <input type="hidden" name="">
+            <input type="hidden" name="voto">
                 
-            <button type="submit" class="confirma">CONFIRMA</button>
+            <button onclick="voto()" type="submit" class="btnfnct confirma">CONFIRMA</button>
         
             </form>
 

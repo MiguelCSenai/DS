@@ -16,27 +16,33 @@ body{
 }
 .form{
 
-    width: 50%;
+    width: 60%;
+    border: 5px solid rgb(73, 73, 73);
+    height: 600px;
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 
 }
 .displaycontainer{
 
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
     height: 100%;
-    gap: 5px;
+    gap: 70px;
 
 }
 .display{
 
-    width: 4.5%;
-    padding-inline: 2%;
+    width: 15%;
+    text-align: center;
     height: 1.3em;
     font-size: 3.5em;
+    scale: 2;
 
 }
 
@@ -59,6 +65,7 @@ body{
     flex-direction: column;
     width: 35%;
     gap: 50px;
+    scale: 0.75;
 
 }
 
@@ -79,5 +86,58 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 150px;
+
+}
+
+.btnfnct{
+
+    width: 31%;
+    padding: 5% 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.corrige{
+
+    background-color: rgb(226, 147, 0);
+
+}
+
+.confirmacontainer{
+
+    width: 34.5%;
+
+}
+
+.confirma{
+
+    width: 100%;
+    padding: 15% 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: green;
+
+}
+
+.titulo{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.texto{
+
+    font-size: 2.5em;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
 }
