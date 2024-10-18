@@ -1,0 +1,83 @@
+body{
+
+    background-color: rgb(227, 227, 227);
+
+}
+
+.container{
+
+    width: 100%;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.form{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.displaycontainer{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+
+}
+.display{
+
+    width: 4.5%;
+    padding-inline: 2%;
+    height: 1.3em;
+    font-size: 3.5em;
+
+}
+
+.btn{
+
+    width: 30%;
+    padding: 5% 5%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    
+
+}
+
+.btncontainer{
+
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 50px;
+
+}
+
+.numcontainer{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.fnctcontainer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+
+}
