@@ -8,26 +8,35 @@
 </head>
 
 <script>
+    let voto = "";
     function addNumber(num) {
-
+        var digito = new Audio('../sfx/digito.mp3');
+        digito.play();
         let display1 = document.getElementById("display1");
         let display2 = document.getElementById("display2");
         let selectdisplay = display1.value === "" ? display1 : display2;
 
         if (selectdisplay.value.length < 1) {
+
             selectdisplay.value = num;
+            voto += selectdisplay.value;
+
         }
+
+        if (display1.value.length > 0 && display2.value.length > 0) {
+        
+            document.getElementById("voto").value = voto;
+
+        }
+
     }
 
     function clearDisplay() {
         display1.value = "";
         display2.value = "";
-    }
-
-    function voto(){
-
-        let voto = display1.value + display2.value;
-
+        document.getElementById("voto").value = "";
+        voto = "";
+        
     }
 </script>
 
@@ -66,16 +75,16 @@
         </div>
 
         <div class="fnctcontainer">
-        
-            <button class="btnfnct branco">BRANCO</button>
-            <button class="btnfnct corrige" onclick="clearDisplay()">CORRIGE</button>
-            <form class="confirmacontainer" action="gravarvoto.php">
+    
+        <button class="btnfnct branco">BRANCO</button>
+        <button class="btnfnct corrige" onclick="clearDisplay()">CORRIGE</button>
+        <form  class="confirmacontainer">
 
-            <input type="hidden" name="voto">
-                
-            <button onclick="voto()" type="submit" class="btnfnct confirma">CONFIRMA</button>
-        
-            </form>
+        <input type="hidden" id="voto">
+            
+        <button onclick="voto()" type="submit" class="btnfnct confirma">CONFIRMA</button>
+    
+        </form>
 
         </div>
         </div>
