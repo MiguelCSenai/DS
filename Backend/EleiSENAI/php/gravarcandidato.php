@@ -22,3 +22,5 @@
 
     mysqli_close($conexao);
 ?>
+
+<meta http-equiv="refresh" content='0; URL="cadastroeleitores.php"'>

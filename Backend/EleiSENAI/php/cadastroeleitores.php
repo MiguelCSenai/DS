@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form class="cadastro" action="gravar.php" method="get">
+    <form class="cadastro" action="gravareleitor.php" method="get">
 
         <h1 class="medio">Cadastro de Eleitor</h1>
 

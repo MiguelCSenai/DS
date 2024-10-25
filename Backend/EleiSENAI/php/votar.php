@@ -8,26 +8,35 @@
 </head>
 
 <script>
+    let voto = "";
     function addNumber(num) {
-
+        var digito = new Audio('../sfx/digito.mp3');
+        digito.play();
         let display1 = document.getElementById("display1");
         let display2 = document.getElementById("display2");
         let selectdisplay = display1.value === "" ? display1 : display2;
 
         if (selectdisplay.value.length < 1) {
+
             selectdisplay.value = num;
+            voto += selectdisplay.value;
+
         }
+
+        if (display1.value.length > 0 && display2.value.length > 0) {
+        
+            document.getElementById("voto").value = voto;
+
+        }
+
     }
 
     function clearDisplay() {
         display1.value = "";
         display2.value = "";
-    }
-
-    function voto(){
-
-        let voto = display1 + display2;
-
+        document.getElementById("voto").value = "";
+        voto = "";
+        
     }
 </script>
 
@@ -48,10 +57,10 @@
 
             <img src="https://seeklogo.com/images/B/brasao-da-republica-do-brasil-logo-F668D19105-seeklogo.com.png" alt="">
             
-            <div class="texto">JUSTIÇA ELEITORA</div>
+            <div class="texto">JUSTIÇA ELEITORAL</div>
 
         </div>
-
+        <div class="fundo">
         <div class="numcontainer">
             <button class="btn" onclick="addNumber(0)">0 &#x28C0;</button>
             <button class="btn" onclick="addNumber(1)">1 &#x28C1;</button>
@@ -61,22 +70,23 @@
             <button class="btn" onclick="addNumber(5)">5 &#x28C5;</button>
             <button class="btn" onclick="addNumber(6)">6 &#x28C6;</button>
             <button class="btn" onclick="addNumber(7)">7 &#x28C7;</button>
-            <button class="btn" onclick="addNumber(9)">9 &#x28C9;</button>
             <button class="btn" onclick="addNumber(8)">8 &#x28C8;</button>
+            <button class="btn" onclick="addNumber(9)">9 &#x28C9;</button>
         </div>
 
         <div class="fnctcontainer">
-        
-            <button class="btnfnct branco">BRANCO</button>
-            <button class="btnfnct corrige" onclick="clearDisplay()">CORRIGE</button>
-            <form class="confirmacontainer" action="gravarvoto.php">
+    
+        <button class="btnfnct branco">BRANCO</button>
+        <button class="btnfnct corrige" onclick="clearDisplay()">CORRIGE</button>
+        <form  class="confirmacontainer">
 
-            <input type="hidden" name="voto">
-                
-            <button onclick="voto()" type="submit" class="btnfnct confirma">CONFIRMA</button>
-        
-            </form>
+        <input type="hidden" id="voto">
+            
+        <button onclick="voto()" type="submit" class="btnfnct confirma">CONFIRMA</button>
+    
+        </form>
 
+        </div>
         </div>
     </div>
 
