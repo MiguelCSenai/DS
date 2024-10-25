@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 07-Out-2024 às 19:58
+-- Tempo de geração: 25-Out-2024 às 14:14
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -34,17 +34,18 @@ CREATE TABLE IF NOT EXISTS `candidatos` (
   `cand_id` int NOT NULL AUTO_INCREMENT,
   `cand_nome` varchar(50) NOT NULL,
   `cand_partido` text NOT NULL,
-  `cand_numero` int NOT NULL,
+  `cand_numero` text NOT NULL,
   `cand_img` text NOT NULL,
   PRIMARY KEY (`cand_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `candidatos`
 --
 
 INSERT INTO `candidatos` (`cand_id`, `cand_nome`, `cand_partido`, `cand_numero`, `cand_img`) VALUES
-(1, 'Erick \"Aspas\" dos Santos', 'LOUD', 22, 'https://prosettings.net/wp-content/uploads/aspas.png');
+(1, 'Erick \"Aspas\" dos Santos', 'LOUD', '22', 'https://prosettings.net/wp-content/uploads/aspas.png'),
+(2, 'Peixonauta', 'PPA (Partido dos Peixes Anárquicos)', '09', 'https://static.wikia.nocookie.net/dublagem/images/0/0e/PEIXONAUTA.jpg/revision/latest?cb=20210606224247&path-prefix=pt-br');
 
 -- --------------------------------------------------------
 
@@ -56,9 +57,17 @@ DROP TABLE IF EXISTS `eleitores`;
 CREATE TABLE IF NOT EXISTS `eleitores` (
   `elei_id` int NOT NULL AUTO_INCREMENT,
   `elei_nome` varchar(50) NOT NULL,
-  `elei_cpf` int NOT NULL,
+  `elei_cpf` text NOT NULL,
   PRIMARY KEY (`elei_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `eleitores`
+--
+
+INSERT INTO `eleitores` (`elei_id`, `elei_nome`, `elei_cpf`) VALUES
+(1, 'Miguel Caires Montalvão', '51012267857'),
+(2, 'Rafael Julio Garcia', '80846131544');
 
 -- --------------------------------------------------------
 
