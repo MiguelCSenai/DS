@@ -10,10 +10,7 @@
 
     if (mysqli_query($conexao, $query)) {
         
-    echo htmlspecialchars($nome) . '<br>';
-    echo htmlspecialchars($partido) . '<br>';
-    echo htmlspecialchars($numero) . '<br>';
-    echo htmlspecialchars($img) . '<br>';
+    echo '<meta http-equiv="refresh" content="0; URL={cadastrocandidatos.php}">';
 
 
     } else {
@@ -22,5 +19,3 @@
 
     mysqli_close($conexao);
 ?>
-
-<meta http-equiv="refresh" content='0; URL="cadastroeleitores.php"'>

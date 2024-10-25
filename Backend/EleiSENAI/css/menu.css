@@ -1,3 +1,16 @@
+body{
+
+    background-color: white;
+
+}
+
+button{
+
+    background-color: transparent;
+    border-width: 0;
+
+}
+
 .menucontainer{
 
     height: 45vh;
@@ -11,6 +24,7 @@
 }
 
 .container {
+    background-color: white;
     position: relative;
     min-height: 97vh;
     width: 100%;
@@ -68,5 +82,56 @@ a{
 
     text-decoration: none;
     color: black;
+
+}
+
+.form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.form-container form{
+
+    width: 20vw;
+    height: 30vh;
+    padding: 20px;
+    border: grey 4px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(213, 213, 213);
+    justify-content: space-around;
+
+}
+
+input{
+
+    font-size: 1.5em;
+    padding: 15px 20px;
+    border-radius: 10px;
+
+}
+
+.overlay-active {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+
+.btn{
+
+    height: 3.5em;
+    background: rgb(215, 218, 32);
+    border: gray 3px solid;
+    color: white;
 
 }

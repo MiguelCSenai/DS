@@ -134,7 +134,7 @@ s<!DOCTYPE html>
 
     </table>
 
-    <a href="cadastro.php"><button>Cadastrar</button></a>
+    <a href="cadastroeleitores.php"><button>Cadastrar Eleitor</button></a>
 
     
 </body>

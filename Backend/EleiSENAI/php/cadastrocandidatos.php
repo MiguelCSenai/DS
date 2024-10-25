@@ -28,7 +28,10 @@
 
     </form>
 
-    <a href="cadastroeleitores.php"><button>Cadastro de Eleitores</button></a>
+    <div class="containerlinks">
+        <a href="consultacandidatos.php"><button>Consultar Candidatos</button></a>
+        <a href="menu.php"><button>Menu</button></a>
+    </div>
 
 </body>
 </html>

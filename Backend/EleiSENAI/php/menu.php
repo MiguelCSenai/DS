@@ -6,6 +6,29 @@
     <title>Menu</title>
     <link rel="stylesheet" href="../css/menu.css">
 </head>
+
+<script>
+    function mostrarFormulario() {
+    const formContainer = document.querySelector('.form-container');
+    const overlay = document.querySelector('.overlay');
+
+    formContainer.style.display = 'block';
+    overlay.classList.add('overlay-active');
+    
+}
+
+function fecharFormulario() {
+
+    const formContainer = document.querySelector('.form-container');
+    const overlay = document.querySelector('.overlay');
+
+    formContainer.style.display = 'none';
+    overlay.classList.remove('overlay-active');
+
+}
+
+</script>
+
 <body>
 
     <div class="container">
@@ -21,7 +44,7 @@
                 </div>
 
             </a>
-            <a href="cadastrocandidato.php">
+            <a href="cadastrocandidatos.php">
 
                 <div class="iconemenu">
 
@@ -31,17 +54,14 @@
                 </div>
 
             </a>
-            <a href="votar.php">
-
+            <button onclick="mostrarFormulario()">
                 <div class="iconemenu">
-
                     <img class="imgmenu" src="https://seeklogo.com/images/B/brasao-da-republica-do-brasil-logo-F668D19105-seeklogo.com.png">
                     <h3 class="textmenu">Voto</h3>
-
                 </div>
+            </button>
 
-            </a>
-            <a href="">
+            <a href="apuração.php">
 
                 <div class="iconemenu">
 
@@ -56,6 +76,16 @@
 
 
     </div>
+
+    <div class="form-container">
+        <form action="eleitor.php" method="get">
+            <label for="cpf">Digite seu CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="button" onclick="fecharFormulario()">Fechar</button>
+        </form>
+    </div>
+
     
 </body>
 </html>

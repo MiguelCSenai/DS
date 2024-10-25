@@ -1,3 +1,9 @@
+<?php
+
+    $id_eleitor = $_POST['elei_id'] ?? '';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,6 +14,7 @@
 </head>
 
 <script>
+    
     let voto = "";
     function addNumber(num) {
         var digito = new Audio('../sfx/digito.mp3');
@@ -26,6 +33,15 @@
         if (display1.value.length > 0 && display2.value.length > 0) {
         
             document.getElementById("voto").value = voto;
+            <?php
+            
+            $query = mysqli_query($conexao, "SELECT cand_nome, cand_partido, cand_numero, cand_img
+            FROM candidatos
+            WHERE cand_numero = $voto");
+
+            $saida = mysqli_fetch_array($query);            
+
+            ?>
 
         }
 

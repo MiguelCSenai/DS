@@ -22,7 +22,10 @@
 
     </form>
 
-    <a href="cadastrocandidatos.php"><button>Cadastro de Candidatos</button></a>
+    <div class="containerlinks">
+        <a href="consultacandidatos.php"><button>Consultar Candidatos</button></a>
+        <a href="menu.php"><button>Menu</button></a>
+    </div>
 
 </body>
 </html>
