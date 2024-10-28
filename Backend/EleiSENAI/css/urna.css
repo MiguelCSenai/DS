@@ -27,7 +27,17 @@ body{
     align-items: center;
 
 }
-.displaycontainer{
+.displaycontainerpre{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    gap: 70px;
+
+}
+.displaycontainerdep{
 
     display: flex;
     align-items: center;
@@ -164,5 +174,32 @@ img{
 
     height: 190px;
     margin-right: 70px;
+
+}
+
+.infocontainer{
+
+    width: calc(50%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    padding-right: 60px;
+}
+
+#candidatoImg{
+
+
+        width: 150px;
+        height: 150px;
+        border: grey solid 1px;
+}
+
+.textinfo{
+
+    width: 100%;
+    height: 50%;
+    text-align: right;
 
 }
