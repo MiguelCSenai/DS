@@ -69,7 +69,6 @@ s<!DOCTYPE html>
     .tbheader{
 
         background: yellow;
-        color: white;
 
     }
 

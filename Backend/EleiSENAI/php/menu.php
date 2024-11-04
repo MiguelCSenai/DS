@@ -61,7 +61,7 @@ function fecharFormulario() {
                 </div>
             </button>
 
-            <a href="apuração.php">
+            <a href="apuracao.php">
 
                 <div class="iconemenu">
 

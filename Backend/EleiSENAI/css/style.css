@@ -127,3 +127,33 @@ table tr:nth-child(even){
     gap: 50px;
 
 }
+
+.grafico{
+
+    background-color: rgb(199, 199, 199);
+    width: 75%;
+    height: 72vh;
+    padding-block: 5%;
+    border: 4px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.rowcand{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+
+}
+
+.rowcand img{
+
+    margin-inline: 2%;
+    background-color: white;
+
+}

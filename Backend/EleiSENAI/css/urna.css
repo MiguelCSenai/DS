@@ -27,22 +27,25 @@ body{
     align-items: center;
 
 }
-.displaycontainerpre{
+
+.infodisplay{
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 40%;
-    height: 100%;
-    gap: 70px;
+    margin-top: 70px;
+    height: calc(100% - 70px);
 
 }
-.displaycontainerdep{
+
+.displaycontainer{
 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 100%;
     height: 100%;
     gap: 70px;
 
@@ -54,6 +57,7 @@ body{
     height: 1.3em;
     font-size: 3.5em;
     scale: 2;
+    border: 2px solid black;
 
 }
 
@@ -170,7 +174,7 @@ body{
 
 }
 
-img{
+.titulo img{
 
     height: 190px;
     margin-right: 70px;
@@ -183,23 +187,49 @@ img{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: end;
-    padding-right: 60px;
 }
 
 #candidatoImg{
 
-
-        width: 150px;
-        height: 150px;
-        border: grey solid 1px;
+    width: 250px;
+    height: 250px;
+    border: rgb(76, 76, 76) solid 3px;
+    
 }
 
 .textinfo{
 
-    width: 100%;
+    width: 150%;
     height: 50%;
-    text-align: right;
+    margin-left: 340px;
+    text-align: left;
+
+}
+
+.piscar {
+    animation: fade 1s infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+}
+
+#candidatoNome{
+
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#candidatoPartido{
+
+    font-family: Arial, Helvetica, sans-serif;
 
 }

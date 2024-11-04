@@ -69,7 +69,6 @@ s<!DOCTYPE html>
     .tbheader{
 
         background: yellow;
-        color: white;
 
     }
 
@@ -89,7 +88,7 @@ s<!DOCTYPE html>
 
 <body>
 
-    <form action="consultaeleitores.php" class="search-container" method="post">
+    <form action="consultacandidatos.php" class="search-container" method="post">
 
         <input class="search" type="text" name="search" id="search">
         <label for="search"><button class="subsrc" type="submit"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></button></label>
