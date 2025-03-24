@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.italic{
+
+    font-style: italic;
+
+}
+
+.regular {
+
+    font-weight: 400;
+
+}
+
+.bold {
+
+    font-weight: 700;
+
+}
+
+.smallT{
+
+    font-size: 1.5em;
+
+}
+
+.mediumT{
+
+    font-size: 2em;
+
+}
+
+.bigT{
+
+    font-size: 3em;
+
+}
+
+.hugeT{
+
+    font-size: 6em;
+
+}
+
+.noSelect{
+
+    user-select: none;
+
+}
+
+.smallUL{
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+
+}
+
+.mediumUL{
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+
+}
+
+.largeUL{
+  
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }

@@ -1,8 +1,10 @@
 .menu {
-    position: relative;
-    background-color: #E20713;
+    position: sticky;
+    background-color: #ff000d;
     padding: 0;
     z-index: 10;
+    top: 0;
+    max-width: 100vw;
 }
 
 .menu ul {
@@ -10,7 +12,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 5px;
     margin-left: 50px;
 }
@@ -28,9 +30,10 @@
     transition: 0.5s;
     border: transparent 2px solid;
     font-size: 1.2em;
+    height: 100% ;
 }
 .menu ul li a:hover {
-    background-color: #00000017;
+    background-color: #0000002c;
     border: #cb1515 2px solid;
     letter-spacing: 2px;
 }
@@ -38,7 +41,8 @@
 .menu ul li:last-child {
 
     margin-left: auto;
-    background-color: #cb1515;
+    background-color: #9c0000;
+    border-left: 2px solid white;
 
 }
 
@@ -46,4 +50,9 @@
 
     background-color: #981c1c;
 
+}
+
+.logo{
+
+    height: 60px;
 }

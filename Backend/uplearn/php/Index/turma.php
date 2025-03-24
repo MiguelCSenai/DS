@@ -3,25 +3,25 @@ include "../mysqlconecta.php";
 
 session_start();
 
-if (isset($_POST['nome']) && isset($_POST['senha'])) {
-    $nome = $_POST['nome'];
-    $senha = $_POST['senha'];
+if (isset($_SESSION['prof'])) {
+    $professor = $_SESSION['prof'];
+    $query_turmas = "SELECT tur_nome
+                    FROM turmas
+                    WHERE JSON_CONTAINS(tur_prof, '\"$professor\"')";
     
-    if (!empty($nome) && !empty($senha)) {
-        $query = "SELECT * FROM professores WHERE pro_nome = '$nome' AND pro_senha = '$senha'";
-        $result = $conexao->query($query);
-        
-        if ($result->num_rows > 0) {
-            $_SESSION['prof'] = $nome;
-            header("Location: turma.php");
-            exit();
-        } else {
-            $error = "Usuário ou senha incorretos.";
-        }
-    } else {
-        $error = "Preencha todos os campos.";
-    }
+    $result_turmas = mysqli_query($conexao, $query_turmas);
+} else {
+    header("Location: index.php");
+    exit();
 }
+
+if(isset($_POST['turma'])){
+
+    $_SESSION['turma'] = $_POST['turma'];
+    header("Location: ../Professor/menu.php");
+
+}
+
 $conexao->close();
 ?>
 
@@ -36,7 +36,7 @@ $conexao->close();
     <link rel="stylesheet" href="../../css/general/fonts.css">
     <link rel="stylesheet" href="../../css/general/elements.css">
     <link rel="stylesheet" href="../../css/general/attributes.css">
-    <link rel="stylesheet" href="../../css/pages/index.css">
+    <link rel="stylesheet" href="../../css/pages/turma.css">
     <link rel="shortcut icon" href="https://dseedgestao.sp.senai.br/assets/media/logos/senai_logo_small_red.png" type="image/png">
 </head>
 <body>
@@ -47,7 +47,7 @@ $conexao->close();
 
             <li><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png" alt="logo  "></li>
 
-            <li><a href="../Professor/menu.php"><?php if (isset($_SESSION['prof'])) { echo $_SESSION['prof']; }else{ echo "Professor"; } ?></a></li>
+            <li><a><?php if (isset($_SESSION['prof'])) { echo $_SESSION['prof']; }else{ echo "Professor"; } ?></a></li>
 
         </ul>
 
@@ -58,12 +58,15 @@ $conexao->close();
         <?php if (isset($error)) { echo "<p style='color: red;'>$error</p>"; } ?>
         <form class="bold redBC mediumBS solid light-redBT" action="" method="POST">
             <div class="form-group">
-                <label for="nome">Usuário:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+                <label for="turma">Turma:</label>
+                <select id="turma" name="turma" required>
+                        <option disabled selected>Selecione uma turma</option>
+                        <?php while ($turmas = mysqli_fetch_assoc($result_turmas)) { ?>
+                            <option value="<?php echo $turmas['tur_nome']; ?>">
+                                <?php echo $turmas['tur_nome']; ?>
+                            </option>
+                        <?php } ?>
+                </select>
             </div>
             <button class="btn" type="submit">Entrar</button>
         </form>

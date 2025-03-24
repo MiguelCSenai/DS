@@ -1,0 +1,110 @@
+body{
+
+    padding-bottom: 100px;
+
+}
+
+.container{
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 15px);
+
+}
+
+.carrinho{
+
+    width: 35vw;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    min-width: 350px;
+    min-height: 70vh;
+    background-color: #cdcdcd;
+    border-radius: 15px;
+}
+
+.carrinho h1{
+
+    width: 100%;
+    text-align: center;
+    text-decoration: underline red solid 2px;
+    font-size: 2.5em;
+
+}
+
+.carrinho ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0;
+
+}
+
+.carrinho li{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+
+}
+
+.btn{
+
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95em;
+
+}
+
+.uso{
+
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: gray solid 5px;
+    background-color: #cdcdcd;
+
+}
+
+.uso:hover{
+
+    border: rgb(58, 58, 58) solid 5px;
+    background-color: #bababa;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.uso a{
+
+    color: rgb(74, 74, 74);
+    transition: 0.2s linear;
+
+}
+
+.uso:hover a{
+
+    color: rgb(39, 39, 39);
+
+}
